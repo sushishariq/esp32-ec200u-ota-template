@@ -114,6 +114,7 @@ bool sendAT(
 void modemInit()
 {
     Serial.println("\n===== EC200U INIT =====");
+    // MODEM RESET AT COMMAND
     // sendAT("AT+CFUN=1,1","OK",10000);
     // delay(30000);
     sendAT("AT", "OK");
