@@ -4,6 +4,8 @@ A reusable Over-The-Air (OTA) firmware update framework for ESP32, using a Quect
 
 Designed so future projects only ever need to touch three things: `appSetup()`, `appLoop()`, and `FW_VERSION`. Everything else (modem handling, version checks, downloading, flashing) is reusable OTA "engine" code.
 
+[Check the demonstration here](https://drive.google.com/file/d/1C1rqB3vzos-wEmrv42YCmAoaDz8QH7uV/view?usp=sharing)
+
 ## Features
 
 - OTA updates over cellular (no WiFi required)
@@ -160,6 +162,7 @@ After flashing v1.0.1 over OTA, the faster blink rate confirms the new firmware 
 
 | Issue | Check |
 |---|---|
+| Random Network Failures | Inside `bool sendAT` uncomment the reset AT commands |
 | Modem not registering | SIM inserted correctly, valid data plan, signal strength |
 | No SIM detected | SIM seated properly, correct SIM size/voltage for EC200U |
 | Firmware download fails | Server running, ngrok URL current, URL matches firmware code |
