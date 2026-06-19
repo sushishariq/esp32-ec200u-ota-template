@@ -162,7 +162,7 @@ After flashing v1.0.1 over OTA, the faster blink rate confirms the new firmware 
 
 | Issue | Check |
 |---|---|
-| Random Network Failures | Inside `bool sendAT` uncomment the reset AT commands |
+| Random Network Failures | Inside `void modemInit()` uncomment the reset AT commands |
 | Modem not registering | SIM inserted correctly, valid data plan, signal strength |
 | No SIM detected | SIM seated properly, correct SIM size/voltage for EC200U |
 | Firmware download fails | Server running, ngrok URL current, URL matches firmware code |
