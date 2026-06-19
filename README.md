@@ -15,7 +15,7 @@ Designed so future projects only ever need to touch three things: `appSetup()`, 
 ## Hardware Required
 
 - ESP32 development board (38-pin)
-- Quectel EC200U development board
+- Quectel EC200U development board (Find the manual [here](https://robu-prod-media.s3.ap-south-1.amazonaws.com/uploads/2024/05/UserManual-TracX-1b-V1.3-_latest-edition.pdf).)
 - Active SIM card with a data plan
 - 5V power supply (3A recommended)
 
